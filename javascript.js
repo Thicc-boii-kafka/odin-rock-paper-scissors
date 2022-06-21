@@ -18,9 +18,10 @@ let playerSelection;
 
 
 
-const computerSelection = computerPlay();
+let computerSelection;
 
 function playRound(playerSelection, computerSelection) {
+    computerSelection = computerPlay();
     playerSelection = prompt("please choose between rock, paper, scissors");
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection == computerSelection) {
